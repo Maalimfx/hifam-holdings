@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-hifam-blue: #0b4d92;
+  --color-hifam-red: #d71921;
+  --color-hifam-gold: #f9b233;
+}
+
+/* 1. LIGHT MODE COLORS */
+:root {
+  --site-bg: #ffffff;
+  --site-text: #0f172a;
+}
+
+/* 2. DARK MODE COLORS (When 'dark' class is present) */
+.dark {
+  --site-bg: #020617; /* Midnight Blue */
+  --site-text: #f8fafc;
+}
+
+/* 3. APPLY TO BODY */
+body {
+  background-color: var(--site-bg) !important;
+  color: var(--site-text) !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  min-height: 100vh;
+}
+
+/* 4. FIX CARDS IN DARK MODE */
+.dark .bg-white {
+  background-color: #0f172a !important; /* Darker slate for cards */
+  color: white !important;
+}
+
+.dark .bg-slate-50 {
+  background-color: #1e293b !important;
+}
+
+.dark .text-slate-600 {
+  color: #94a3b8 !important;
+}
