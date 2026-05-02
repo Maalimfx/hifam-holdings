@@ -38,9 +38,13 @@ export default function HomePage() {
             consistency, and reliability across Kenya's essential service sectors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/services" className="bg-hifam-blue hover:bg-hifam-red text-white px-10 py-4 rounded-full font-bold text-center transition duration-300 inline-block shadow-xl">
-              Explore Our Services
-            </Link>
+            {/* Hero Button Check */}
+<Link 
+  href="/services" 
+  className="bg-hifam-blue hover:bg-hifam-red text-white px-10 py-4 rounded-full font-bold transition shadow-xl"
+>
+  Explore Our Services
+</Link>
             <Link href="/contact" className="backdrop-blur-md bg-white/10 border-2 border-white/30 hover:bg-white hover:text-slate-900 text-white px-10 py-4 rounded-full font-bold text-center transition inline-block">
               Contact Us
             </Link>

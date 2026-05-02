@@ -13,9 +13,13 @@ export default function ServiceCard({ name, description, icon, href }: any) {
       </div>
       <h3 className="text-2xl font-bold mb-3 dark:text-white">{name}</h3>
       <p className="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">{description}</p>
-      <Link href={href} className="inline-flex items-center font-bold text-hifam-red hover:text-hifam-blue dark:hover:text-hifam-gold transition">
-        Learn More <ArrowRight className="ml-2 w-4 h-4" />
-      </Link>
+      {/* Inside ServiceCard return... */}
+<Link 
+  href={href} 
+  className="inline-flex items-center font-bold text-hifam-red hover:text-hifam-blue dark:hover:text-hifam-gold transition"
+>
+  Learn More <ArrowRight className="ml-2 w-4 h-4" />
+</Link>
     </div>
   );
 }
